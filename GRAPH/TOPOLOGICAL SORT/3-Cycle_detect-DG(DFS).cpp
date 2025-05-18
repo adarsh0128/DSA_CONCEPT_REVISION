@@ -60,3 +60,26 @@ int main() {
 
     return 0;
 }
+
+
+// Time Complexity (TC)
+// Building adjacency list:
+// Iterates over all edges once → O(E)
+
+// DFS traversal:
+// Each vertex is visited once → O(V)
+// Each edge is explored once during DFS → O(E)
+
+// Total time complexity:
+// O(V + E)
+
+// Space Complexity (SC)
+// Adjacency list: Stores all edges → O(V + E)
+
+// Visited arrays (vis and dfsVis): Two arrays of size V → O(V)
+
+// Call stack for DFS recursion: Maximum depth O(V) → O(V)
+
+// Total space complexity:
+// O(V + E)
+

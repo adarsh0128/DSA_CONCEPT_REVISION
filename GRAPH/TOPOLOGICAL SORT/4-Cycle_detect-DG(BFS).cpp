@@ -66,3 +66,26 @@ int main() {
 
     return 0;
 }
+
+
+// Time Complexity (TC)
+// Building adjacency list and indegree array:
+// Iterate over all edges once → O(E)
+
+// Processing nodes in BFS:
+// Each vertex is enqueued and dequeued at most once → O(V)
+// Each edge is processed once when decreasing in-degree → O(E)
+
+// Total time complexity:
+// O(V + E)
+
+// Space Complexity (SC)
+// Adjacency list: Stores all edges → O(V + E)
+
+// Indegree array: Stores indegree for each vertex → O(V)
+
+// Queue: Stores nodes with indegree 0 (max size O(V)) → O(V)
+
+// Total space complexity:
+// O(V + E)
+

@@ -81,3 +81,27 @@ int main() {
 }
 
 
+
+// Time Complexity (TC)
+// Building adjacency list and indegree array:
+// Iterates over all edges once → O(E)
+
+// Processing nodes with in-degree 0:
+// Each node is pushed and popped from the queue once → O(V)
+// Each edge is checked exactly once when decreasing in-degree → O(E)
+
+// Total time complexity:
+// O(V + E)
+
+// Space Complexity (SC)
+// Adjacency list: Stores all edges → O(V + E)
+
+// Indegree array: Stores indegree for each vertex → O(V)
+
+// Queue: Stores nodes with in-degree zero (max size O(V)) → O(V)
+
+// Result vector: Stores all vertices in topological order → O(V)
+
+// Total space complexity:
+// O(V + E)
+
